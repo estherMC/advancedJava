@@ -36,7 +36,7 @@ public class Main {
         
     }
 
-    
+    //Utilitzem in variables buildings dins del mètode --> extends
     static void printBuildings(List<? extends Building> buildings) {
         for(int i = 0; i < buildings.size(); i++) {
             System.out.println(buildings.get(i).toString() + " " + (i + 1));
@@ -44,7 +44,7 @@ public class Main {
         System.out.println();
     }
     
-    
+    //Utilitzem out variables buildings dins del mètode (afegim a un llistat) --> super    
     static void addHouseToList(List<? super House> buildings) {
         buildings.add(new House());
         System.out.println();

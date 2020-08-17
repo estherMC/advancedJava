@@ -1,5 +1,5 @@
 
-package advanced.generics.substitution;
+package advanced.substitution;
 
 /**
  *

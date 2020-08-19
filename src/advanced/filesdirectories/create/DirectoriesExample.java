@@ -19,10 +19,11 @@ public class DirectoriesExample {
      */
     public static void main(String[] args) {
 
+    	//Using functional interface FilenameFilter
         FilenameFilter filter = (file, fileName) -> {
+        	
             return fileName.contains(".");
         };
-   
         
         String[] contents = new File(".").list(filter);
         for(String file: contents) {
